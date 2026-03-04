@@ -1,20 +1,30 @@
 
+import { Suspense } from 'react';
 import './App.css'
-import Banner from './Body/Banner'
-import Hero from './Body/Hero'
+import CustomerTickets from './Body/CustomerTickets'
 
 import Footer from './Footer/Footer'
 import Navbar from './Navbar/Navbar'
+import Banner from './Body/Banner';
 
 function App() {
+  const fetchTickets = async () => {
+  const res = await fetch("/tickets.json");
+  return res.json();
+};
 
 
+ const ticketsPromise = fetchTickets();
   return (
     <>
     
       <Navbar></Navbar>
-      <Hero></Hero>
-
+      <div className="bg-gray-200 min-h-screen">
+        <Banner />
+        <Suspense fallback={<span className="loading loading-bars loading-xl"></span>}>
+          <CustomerTickets ticketsPromise={ticketsPromise} />
+        </Suspense>
+      </div>
       <Footer></Footer>
      
       

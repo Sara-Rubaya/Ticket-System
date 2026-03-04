@@ -3,11 +3,11 @@ import React from 'react';
 const Navbar = () => {
     return (
         <div>
-            <div className="navbar bg-base-100 shadow-sm">
-  <div className="flex-1">
+            <div className="navbar bg-gray-100 shadow-sm">
+  <div className="flex-1 text-black">
     <a className="btn btn-ghost text-xl font-stretch-75% from-neutral-400">Ticket System</a>
   </div>
-  <div className="flex-none">
+  <div className="flex-none text-black">
     <ul className="menu menu-horizontal px-1">
       <li><a>Home</a></li>
       <li><a>FAQ</a></li>
@@ -16,7 +16,7 @@ const Navbar = () => {
       <li><a>Download</a></li>
       <li><a>Contact</a></li>
       <li>
-        <button className='bg-gradient-to-r from-violet-800 to-violet-400'>+ New Ticket</button>
+        <button className='bg-gradient-to-r from-violet-800 to-violet-400 text-white'>+ New Ticket</button>
       </li>
     </ul>
   </div>

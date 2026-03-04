@@ -1,16 +1,16 @@
-import React from 'react';
-import Banner from './Banner'
-import CustomerTickets from './CustomerTickets'
+import React from "react"
 
-const Hero = () => {
-    return (
-       <section className='bg-gray-100 p-6 font-sans'>
-            <div className='max-w-7xl mx-auto space-y-6'>
-                <Banner />
-                <CustomerTickets />
-            </div>
-        </section>
-    );
-};
+import tickets from "../../public/JsonData/ticket-data.json"
+import TicketCard from "./TicketCard"
 
-export default Hero;
+function Hero() {
+  return (
+    <div className="grid gap-4 p-5">
+      {tickets.map((ticket) => (
+        <TicketCard key={ticket.id} ticket={ticket} />
+      ))}
+    </div>
+  )
+}
+
+export default Hero
