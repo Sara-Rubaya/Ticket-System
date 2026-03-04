@@ -1,5 +1,8 @@
 
 import './App.css'
+import Banner from './Body/Banner'
+import Hero from './Body/Hero'
+
 import Footer from './Footer/Footer'
 import Navbar from './Navbar/Navbar'
 
@@ -10,6 +13,8 @@ function App() {
     <>
     
       <Navbar></Navbar>
+      <Hero></Hero>
+
       <Footer></Footer>
      
       
