@@ -1,0 +1,28 @@
+import React from 'react';
+
+const Navbar = () => {
+    return (
+        <div>
+            <div className="navbar bg-base-100 shadow-sm">
+  <div className="flex-1">
+    <a className="btn btn-ghost text-xl font-stretch-75% from-neutral-400">Ticket System</a>
+  </div>
+  <div className="flex-none">
+    <ul className="menu menu-horizontal px-1">
+      <li><a>Home</a></li>
+      <li><a>FAQ</a></li>
+      <li><a>Changelog</a></li>
+      <li><a>Blog</a></li>
+      <li><a>Download</a></li>
+      <li><a>Contact</a></li>
+      <li>
+        <button className='bg-gradient-to-r from-violet-800 to-violet-400'>+ New Ticket</button>
+      </li>
+    </ul>
+  </div>
+</div>
+        </div>
+    );
+};
+
+export default Navbar;
