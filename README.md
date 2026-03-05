@@ -1,16 +1,15 @@
-# React + Vite
+What is JSX, and why is it used?
+=JSX, which stands for JavaScript XML, is a way for React developers to write code that looks like HTML inside of JavaScript. It makes the UI code easier to read and helps React make the structure of the user interface clear.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+What is the difference between State and Props?
+=Props are data that a parent component sends to a child component that can't be changed. State is information that a component keeps track of and can change over time, which makes the component re-render.
 
-Currently, two official plugins are available:
+What is the useState hook, and how does it work?
+=useState is a React Hook that lets you add state to functional components. It gives back a state value and a function that updates that value, which makes the component re-render.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+How can you share state between components in React?
+=State can be shared by lifting it to a common parent component and passing it down as props. For larger applications, tools like the Context API or Redux can be used.
 
-## React Compiler
+How is event handling done in React?
+=Event handling in React is done using camelCase event names like onClick or onChange. A JavaScript function is passed to the event handler to define what should happen when the event occurs.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
