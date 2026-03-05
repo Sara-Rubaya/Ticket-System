@@ -12,10 +12,10 @@ const CustomerTicket = ({ ticket }) => {
         ? "text-warning"
         : "text-success";
   return (
-    <div className="card bg-base-100 shadow-md border border-base-200">
+    <div className="card bg-gray-300  text-black shadow-md border border-base-200">
       <div className="card-body p-5 space-y-3">
         {/* Header */}
-        <div className="flex justify-between items-start">
+        <div className="flex justify-between  items-start">
           <h2 className="card-title text-lg font-semibold">{title}</h2>
           <span className={`badge ${statusClass} gap-2 px-3 py-3`}>
             <span
@@ -26,12 +26,12 @@ const CustomerTicket = ({ ticket }) => {
         </div>
 
         {/* Description */}
-        <p className="text-sm text-base-content/70">{description}</p>
+        <p className="text-sm text-black  ">{description}</p>
 
         {/* Footer Row */}
-        <div className="flex justify-between items-center pt-2 text-sm text-base-content/70">
+        <div className="flex  text-black justify-between items-center pt-2 text-sm ">
           <div className="flex items-center gap-3">
-            <span className="text-base-content/60">#{id}</span>
+            <span className="text-black ">#{id}</span>
             <span className={`${priorityClass} font-medium uppercase`}>
               {priority} PRIORITY
             </span>
